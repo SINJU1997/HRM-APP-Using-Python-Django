@@ -1,0 +1,52 @@
+{% extends 'admin-base.html' %}
+{% block content %}
+
+<!-- ============================================================== -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center d-flex justify-content-between" style="width:1020px;">
+                <!-- <h3 class="page-title mb-0 p-0">Dashboard</h3> -->
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/admin-dashboard">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Attendance Reports</li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+
+    <div style="height:380px; text-align:center; padding-top:20px;">
+        <h1 style="margin-bottom:30px; color:goldenrod;">Attendance Report</h1>
+        <!-- attendance record -->
+        <form action="/attendance-sheet" method="get">
+            <label for="selectedDate">Select Date:</label>
+            <input type="date" id="selectedDate">
+        </form>
+        <div id="attendanceTable">
+            <p>sinju - 10.00 am - 5.00 am</p>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+
+{% endblock %}

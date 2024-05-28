@@ -1,0 +1,74 @@
+{% extends 'admin-base.html' %}
+{% block content %}
+
+
+<!-- ============================================================== -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center d-flex justify-content-between" style="width:1020px;">
+                <!-- <h3 class="page-title mb-0 p-0">Dashboard</h3> -->
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/admin-dashboard">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Leave entries</li>
+                        </ol>
+                    </nav>
+                </div>
+   
+            </div>
+            
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+  
+    <div style="height:380px; text-align:center; padding-top:20px;">
+        <h1 style="margin-bottom:30px; color:goldenrod;">Leave Requests</h1>
+                <div class="container" style="width:1000px; overflow-y:scroll;height: 300px;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col" style="color:white;">Id</th>
+                                <th scope="col" style="color:white;">Name</th>
+                                <th scope="col" style="color:white;">Reason</th>
+                                <th scope="col" style="color:white;">Days</th>
+                                <th scope="col" style="color:white;">Approve/Reject</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>sinju</td>
+                                <td>cold</td>
+                                <td>2/4/2024 <span style="color:red;">to</span> 2/4/2024</td>
+                                <td>
+                                    <form action="" method="post">
+                                        <button type="submit" name="status" value="Approved" class="btn btn-light approve" style="color:green; border:1px solid green;">Approve</button>
+                                        <button type="submit" name="status" value="Rejected" class="btn btn-light reject" style="color:red; border:1px solid red;">Reject</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <p style="color:red; margin-top:100px;">No records found.</p> -->
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+
+{% endblock %}

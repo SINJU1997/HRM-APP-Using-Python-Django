@@ -1,0 +1,60 @@
+{% extends 'user-base.html' %}
+{% block content %}
+
+<!-- ============================================================== -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-8 align-self-center d-flex justify-content-between" style="width:1020px;">
+                <!-- <h3 class="page-title mb-0 p-0">Dashboard</h3> -->
+                <div class="d-flex align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h3 class="page-title mb-0 p-0">world</h3>
+            </div>
+            
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div style="height:380px; text-align:center;">
+        <h1>Edit Profile</h1>
+        <div class="container mt-5" style="width:600px;">
+        
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label" style="font-weight:bold;">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" value="" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label" style="font-weight:bold;">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2" value="" name="email">
+                </div>
+                <div>
+                    <button class="btn btn-primary">Update</button>
+                </div>
+            </form>    
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+
+{% endblock%}
